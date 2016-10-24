@@ -11,31 +11,25 @@
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="48dp"
             app:layout_scrollFlags="scroll|enterAlways">
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolBar"
+            <LinearLayout
+                android:id="@+id/toolbarCont"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
 
-                <LinearLayout
-                    android:id="@+id/actionBarCont"
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="COLLAPSING TOOLBAR EXAMPLE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="COLLAPSING TOOLBAR EXAMPLE"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16dp" />
-
-                </LinearLayout>
-
-            </android.support.v7.widget.Toolbar>
+            </LinearLayout>
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 

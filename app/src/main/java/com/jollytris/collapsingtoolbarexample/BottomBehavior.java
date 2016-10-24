@@ -15,6 +15,7 @@ import android.view.View;
 public class BottomBehavior extends CoordinatorLayout.Behavior<View> {
 
     private boolean isShowing;
+
     public BottomBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
